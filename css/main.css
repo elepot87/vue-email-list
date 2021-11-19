@@ -20,7 +20,7 @@ body {
 
 .container {
   width: 1170px;
-  background-color: white;
+  background-color: rgba(250, 250, 250, 0.6);
   height: 700px;
   margin-top: 20px;
   display: flex;
