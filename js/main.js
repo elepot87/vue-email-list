@@ -11,6 +11,8 @@ const root = new Vue({
   data: {
     apiURL: "https://flynn.boolean.careers/exercises/api/random/mail",
     emails: [],
+    imgLoading:
+      "https://i.pinimg.com/originals/6c/7e/b1/6c7eb1dbc683cc9de1d574bbab482bd9.gif",
   },
   created() {
     this.getEmailList();

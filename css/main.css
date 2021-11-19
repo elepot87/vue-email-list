@@ -16,7 +16,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 .container {
@@ -24,6 +23,10 @@ body {
   background-color: white;
   height: 700px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -37,4 +40,8 @@ ul.list {
   color: #d7092b;
   font-size: 20px;
   list-style: none;
+}
+
+.list li {
+  margin: 10px 0;
 }

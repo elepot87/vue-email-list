@@ -14,8 +14,9 @@
     <div id="root">
       <div class="container">
         <h1>A chi manderà un bel ragalo Babbo Natale?</h1>
-        <ul class="list" v-for="email in emails">
-          <li>{{email}}</li>
+        <ul class="list">
+          <li v-for="email in emails" v-if="emails.length < 11">{{email}}</li>
+          <li v-else>{{imgLoading}</li>
         </ul>
       </div>
     </div>
