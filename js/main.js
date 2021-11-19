@@ -17,6 +17,11 @@ const root = new Vue({
   created() {
     this.getEmailList();
   },
+  computed: {
+    dataOk() {
+      return this.emails.length < 11 ? true : false;
+    },
+  },
   methods: {
     getEmailList() {
       // Call to API

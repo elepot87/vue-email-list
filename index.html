@@ -15,7 +15,7 @@
       <div class="container">
         <h1>A chi manderà un bel ragalo Babbo Natale?</h1>
         <ul class="list">
-          <li v-for="email in emails" v-if="emails.length < 11">{{email}}</li>
+          <li v-for="email in emails" v-if="dataOk">{{email}}</li>
           <li v-else>
             <img :src="imgLoading" alt="babbo natale" />
           </li>
