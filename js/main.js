@@ -9,7 +9,8 @@
 const root = new Vue({
   el: "#root",
   data: {
-    email: [],
+    apiURL: "https://flynn.boolean.careers/exercises/api/random/mail",
+    emails: [],
   },
   created() {
     this.getEmailList();
@@ -17,16 +18,19 @@ const root = new Vue({
   methods: {
     getEmailList() {
       // Call to API
-      axios
-        .get("https://flynn.boolean.careers/exercises/api/random/mail")
-        // Handle success
-        .then((response) => {
-          console.log(response);
-        })
-        // Handle error
-        .catch((error) => {
-          console.log(error);
-        });
+      for (let i = 0; i < 10; i++) {
+        axios
+          .get(this.apiURL)
+          // Handle success
+          .then((response) => {
+            console.log(response.data);
+            this.emails.push(response.data.response);
+          })
+          // Handle error
+          .catch((error) => {
+            console.log(error);
+          });
+      }
     },
   },
 });

@@ -4,3 +4,37 @@
   padding: 0;
   font-family: sans-serif;
 }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://www.saporideisassi.it/blog/wp-content/uploads/natale-1.jpg");
+  background-size: cover;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container {
+  width: 1170px;
+  background-color: white;
+  height: 700px;
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #245239;
+  margin: 40px 0;
+}
+
+ul.list {
+  text-align: center;
+  color: #d7092b;
+  font-size: 20px;
+  list-style: none;
+}
