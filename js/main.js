@@ -19,7 +19,7 @@ const root = new Vue({
   },
   computed: {
     dataOk() {
-      return this.emails.length < 11 ? true : false;
+      return this.emails.length === 10 ? true : false;
     },
   },
   methods: {
