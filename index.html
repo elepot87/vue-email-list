@@ -14,12 +14,12 @@
     <div id="root">
       <div class="container">
         <h1>A chi manderà un bel ragalo Babbo Natale?</h1>
-        <ul class="list">
-          <li v-for="email in emails" v-if="dataOk">{{email}}</li>
-          <li v-else>
-            <img :src="imgLoading" alt="babbo natale" />
-          </li>
+        <ul class="list" v-if="dataOk">
+          <li v-for="email in emails">{{email}}</li>
         </ul>
+        <div v-else>
+          <img :src="imgLoading" alt="babbo natale" />
+        </div>
       </div>
     </div>
     <!-- Axios -->
